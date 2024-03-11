@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/Amir/Desktop/webreels-main/index.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="./index_files/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="header_text">Пойдешь со мной на свидание?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="./index_files/emojibest-com-1.gif">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()">Да</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Нет</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script>
+            </div>
+        </div>
+    
+
+
+
+</body></html>
